@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <section class="todo-list">
+    <div class="title">
+      <span class="title__major">ToDo приложение</span><br><span class="title__minor">список задач на сегодня</span>
+      <p class="material-icons show-modal">help_outline</p>
+    </div>
+
+    <div class="tasks-list">
+      <!-- <div class="header">
+        <img src="img/file-1.svg" alt="logo" class="header__logo">
+        <h3 class="header__text">Список дел на данный момент пуст!</h3>
+      </div> -->
+  
+      <!-- <li class="group-item">
+        <span class="group-item__text">Buy Milk</span>
+        <div class="group-item__btn">
+          <button type="button" data-action="done" class="btn-action">
+            <img src="img/tick.svg" alt="done">
+          </button>
+          <button type="button" data-action="delete" class="btn-action">
+            <img src="img/cross.svg" alt="delete">
+          </button>
+        </div>
+      </li> -->
+    </div>
+
+
+    <div class="entry-form-text">Добавь новую задачу</div>
+    <form class="form">
+      <input type="text" class="form__input" placeholder="   В это поле мы записываем новые задачи">
+      <small class="form__text">Что делаем, сколько времени тратим, какой результат получаем.</small>
+      <button class="form__btn">ДОБАВИТЬ</button>
+    </form>
+
+  </section>
+
+
+
+
+
+  <section class="section-timer">
+    <div class="timer-title">Pomodoro Timer</div>
+    <div class="appelation">
+      <p class="appellation__work">Работа</p>
+      <p class="appellation__break">Перерыв</p>
+    </div>
+    <div class="control">
+      <div class="inner-session">
+        <p class="inner-session__btn-minus">-</p>
+        <p class="session">0</p>
+        <p class="inner-session__btn-plus">+</p>
+      </div>
+    
+      <div class="inner-break">
+        <p class="inner-break__btn-minus">-</p>
+        <p class="break">0</p>
+        <p class="inner-break__btn-plus">+</p>
+      </div>
+    </div>
+  
+    <div class="timer">
+      <div class="circle">
+          <div class="time-work">
+              <p class="time-work__minutes">00</p>
+              <p>:</p>
+              <p class="time-work__seconds">00</p>
+          </div>
+          <div class="time-break hidden">
+              <p class="time-break__minutes">00</p>
+              <p>:</p>
+              <p class="time-break__seconds">00</p>
+          </div>
+          <p class="material-icons volume">volume_up</p>
+      </div>
+    </div>
+  
+    <div class="controls">
+      <span class="start material-icons">play_arrow</span>
+      <span class="stop hidden material-icons">stop</span>
+      <span class="reset material-icons">restart_alt</span>
+    </div>
+  </section>
+
+  <section class="section-modal">
+    <div class="modal hidden">
+      <p class="modal__text">
+        Данное ToDo приложение разработоно для того, чтобы помочь вам организовать список дел и продуктивно управлять своими задачами. Благодаря LocalStorage данные ToDo приложения сохраняются при перезагрузке браузера и даже при закрытии и повторном открытии браузера. 
+        Так же в приложение встроен Pomodoro Timer (Методика предполагает увеличение эффективности работы при меньших временных затратах за счёт глубокой концентрации и коротких перерывов). Данный таймер помогает людям, вовлеченным в работу, не забывать про отдых. По умолчанию музыкальное сопровождение времени отдыха отключено, но при желании вы можете его включить, и приятная мелодия напомнит вам, когда наступит время отойти от рабочего места и немного отвлечься.
+      </p>
+    </div>
+    <div class="overlay hidden"></div>
+  </section>
+
+  <script src="js/main.js"></script>
+  <script src="js/timer.js"></script>
+  <script src="js/modalWindow.js"></script>
+</body>
+</html>
